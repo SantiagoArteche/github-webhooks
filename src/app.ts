@@ -1,5 +1,10 @@
-const read: string = "hola";
-const b: string = "hola";
-const e: string = "hola";
+import { Server } from "./presentation/server";
 
-console.log(e + 5);
+(async () => {
+  main();
+})();
+
+function main() {
+  const server = new Server();
+  server.start()
+}
